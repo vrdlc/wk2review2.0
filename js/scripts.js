@@ -1,8 +1,8 @@
 $(document).ready(function() {
-  $("form#questions").submit(function(event) {
-    var nameSpace =["question1", "question2", "question3", "question4", "question5", "question6"];
-    debugger;
+  $("form#questions").submit(function() {
+    var questions = ["question1", "question2", "question3", "question4", "question5", "question6"];
 
+debugger;
     var question1 = $("input#question1").val();
     var question2 = $("input#question2").val();
     var question3 = $("input#question3").val();
@@ -16,59 +16,59 @@ $(document).ready(function() {
         $("#q2").show();
         $("#q1").hide();
       }
-    if (question1 === "cold"){
-        $("#q4").show();
+    else if (question1 === "cold"){
+        $("#q2").show();
         $("#q1").hide();
       }
-    if (question2 === "yes") { //Do you like to be in danger (hot)
+    else if (question2 === "yes") { //Do you like to be in danger (hot)
         $("#q3").show();
         $("#q2").hide();
       }
-    if (question2 === "no") {
+    else if (question2 === "no") {
         $("#answerHotSafe").show();
         $("#q2").hide();
       }
-    if (question3 === "maimed") { //How much danger (hot)
+    else if (question3 === "maimed") { //How much danger (hot)
       $("#answerMaimedHot").show();
       $("#q3").hide();
     }
-    if (question3 === "dead") {
+    else if (question3 === "dead") {
         $("#answerDeadHot").show();
         $("#q3").hide();
       }
 
-    if (question4 === "yes") { //Do you like to be in danger
+    else if (question4 === "yes") { //Do you like to be in danger
         $("#q5").show();
         $("#q4").hide();
       }
 
-    if (question4 === "no") { //Do you like to be in danger
+    else if (question4 === "no") { //Do you like to be in danger
         $("#q6").show();
         $("#q4").hide();
       }
 
-    if (question5 === "dead") { //How much danger (cold)
+    else if (question5 === "dead") { //How much danger (cold)
       $("#answerDeadCold").show();
       $("#q5").hide();
     }
 
-    if (question5 === "maimed") { //How much danger (cold)
+    else if (question5 === "maimed") { //How much danger (cold)
       $("#answerMaimedCold").show();
       $("#q5").hide();
     }
-    if (question6 === "a little") { //How cold
+    else if (question6 === "a little") { //How cold
       $("#answerLittleCold").show();
       $("#q6").hide();
     }
 
-    if (question6 === "a lot") {
+   if (question6 === "a lot") {
       $("#answerLotCold").show();
       $("#q6").hide();
     }
 
 
 
-        event.preventDefault();
+        // event.preventDefault();
     });
 
   });
