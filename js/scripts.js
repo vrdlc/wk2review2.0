@@ -10,6 +10,12 @@ $(document).ready(function() {
     var question5 = $("input#question5").val();
     var question6 = $("input#question6").val();
 
+
+// TESTING TESTING TESTING -- Testing a new order
+// NO MATTER THE ORDER OR WHICH QUESTION I START WITH, PROGRAM ONLY RUNS TO THE SECOND QUESTION THEN RETURNS TO THE FIRST QUESTION. CAN'T RUN THE DEBUGGER ON THE SECOND QUESTION FOR SOME REASON SO I CAN'T SEE WHAT'S ACTUALLY GOING ON.
+
+//I FEEL LIKE THERE'S A LIMIT TO THE ABILITY OF THE if else STATEMENT THAT I AM BREAKING. WOULD THIS HAVE WORKED WITH TWO BUTTONS PER FORM? 
+
 // TESTING TESTING TESTING -- Testing a new order
 
   if (question1 === "hot") { //Do you like to be hot or cold
