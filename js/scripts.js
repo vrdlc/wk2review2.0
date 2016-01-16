@@ -2,7 +2,7 @@ $(document).ready(function() {
   $("form#questions").submit(function(event) {
     var questions = ["question1", "question2", "question3", "question4", "question5", "question6"];
 
-// debugger;
+
     var question1 = $("input#question1").val();
     var question2 = $("input#question2").val();
     var question3 = $("input#question3").val();
@@ -10,27 +10,30 @@ $(document).ready(function() {
     var question5 = $("input#question5").val();
     var question6 = $("input#question6").val();
 
-// TESTING TESTING TESTING
+// TESTING TESTING TESTING -- Testing a new order
 
-if (question1 === "hot") { //Do you like to be hot or cold
+  if (question1 === "hot") { //Do you like to be hot or cold
     $("#q2").show();
     $("#q1").hide();
   }
-  else if (question2 === "yes") { //Do you like to be in danger (hot)
+  if (question2 === "yes") { //Do you like to be in danger (hot)
       $("#q3").show();
       $("#q2").hide();
   }
-  else if (question3 === "maimed") { //How much danger (hot)
+  if (question3 === "maimed") { //How much danger (hot)
     $("#answerMaimedHot").show();
     $("#q3").hide();
   }
-  else if (question2 === "no") {
+  if (question2 === "no") {
       $("#answerHotSafe").show();
       $("#q2").hide();
-    }
+  }
 
 
 // TESTING TESTING TESTING
+
+
+//THIS IS THE ORIGINAL ORDER
   //   if (question1 === "hot") { //Do you like to be hot or cold
   //       $("#q2").show();
   //       $("#q1").hide();
