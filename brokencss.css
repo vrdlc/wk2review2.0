@@ -1,0 +1,31 @@
+/*.jumbotron {
+
+}*/
+
+
+#hotmain {
+  display: none;
+}
+
+#hotdanger {
+  display: none;
+}
+
+
+#hotsafe {
+  display: none;
+}
+
+#coldmain {
+  display: none;
+}
+
+
+#colddanger {
+  display: none;
+}
+
+
+#coldsafe {
+  display: none;
+}

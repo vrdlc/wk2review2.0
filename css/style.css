@@ -1,0 +1,24 @@
+.jumbotron {
+  background-color: #c5d3c7;
+}
+
+body {
+  background-color: #9ab19c;
+
+}
+
+
+
+#q3, #q4, #q5, #q6, #answerMaimedHot, #answerDeadHot, #answerMaimedCold, #answerDeadCold, #answerHotSafe, #answerLittleCold, #answerLotCold, #answer {
+    display: none;
+}
+
+img {
+  height: 50%;
+  width: 50%;
+}
+
+.container-answer .jumbotron  {
+  background-color: #c5d3c7;
+
+}
